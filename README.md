@@ -1,4 +1,4 @@
-This docker-compose.yml file and Dockerfile will create a container for dotnet 7.0 sdk based web site.  This is strictly for development purposes ONLY.  This will help you start using dotnet with only docker installed anything on the computer.  
+This docker-compose.yml file will create a container for dotnet 7.0 sdk based web site.  This is strictly for development purposes ONLY.
   
 Run this:  
 ```
