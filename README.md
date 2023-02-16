@@ -1,6 +1,6 @@
 This docker-compose.yml file will create a container for dotnet 7.0 sdk based web site.  This is strictly for development purposes ONLY.
   
-Run this:  
+Run this via terminal where docker-compose.yml file is located:  
 ```
 docker compose up --build -d && docker exec -it csharp-web dotnet watch  
 ```
