@@ -1,0 +1,27 @@
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# VS Code
+.vscode/
+
+# content below from: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+
+# content below from: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+[Dd]esktop.ini
