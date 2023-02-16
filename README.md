@@ -12,7 +12,9 @@ docker exec -it csharp-web bash
 dotnet new web --name HelloWorld -o .  
 dotnet new gitignore  
 
-The app/Properties/launchSettings.json file has been updated to limit to only development with specific port listening to all ips (and not just localhost):
+The app/Properties/launchSettings.json file has been updated to limit to only development over http.  
+The listening port is set to 5000.  
+Instead of setting host name to localhost, it's set to all ips (0.0.0.0):  
 
 ```javascript
 {
