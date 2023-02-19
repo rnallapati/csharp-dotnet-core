@@ -2,13 +2,26 @@ version: '3.7'
 
 services:
   csharp:
-    container_name: "csharp-web"
-    image: mcr.microsoft.com/dotnet/sdk:7.0
+    build: .
+    container_name: csharp-web
     volumes:
       - ./app:/app
     environment:
-      - ASPNETCORE_URLS=http://0.0.0.0:5000
+      ASPNETCORE_URLS: "http://0.0.0.0:5000"
     ports: 
      - "8081:5000"
     working_dir: /app
     tty: true
+  mssql:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: mssql
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Yahoo123!!"
+      MSSQL_ENCRYPT: "false"
+      TZ: "America/New_York"
+
